@@ -5,12 +5,7 @@ import { TbArrowLoopRight2 } from "react-icons/tb";
 export const Hero = () => {
   return (
     <div className="absolute top-0">
-      <div className="h-screen w-screen relative">
-        <img
-          src="/images/port2.webp"
-          className="absolute w-[100%] h-[100%] object-cover"
-        />
-      </div>
+      <div className="h-screen w-screen relative bg-slate-900" />
       <div className="absolute top-[20%] w-full mx-auto">
         <div className="w-[80%] mx-auto">
           <Typewriter
@@ -30,7 +25,7 @@ export const Hero = () => {
             applications across the full stack
           </p>
           <p className="flex items-center text-white my-10 text-[18px] gap-5">
-            Let's Connect
+            Let&apos;s Connect
             <span>
               <TbArrowLoopRight2 />
             </span>

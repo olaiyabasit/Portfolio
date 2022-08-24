@@ -4,11 +4,18 @@ import { data, socialIcon } from "./data";
 
 export const Header = () => {
   const displayLinks = () =>
-    data.map((link) => <Link href={link.to}>{link.name}</Link>);
+    data.map((link, index) => (
+      <Link href={link.to} key={index}>
+        {link.name}
+      </Link>
+    ));
 
   const displaySocials = () =>
-    socialIcon.map((social) => (
-      <div className="h-8 w-8 flex items-center justify-center rounded-full bg-white text-black">
+    socialIcon.map((social, index) => (
+      <div
+        className="h-8 w-8 flex items-center justify-center rounded-full bg-white text-black"
+        key={index}
+      >
         {social.icon}
       </div>
     ));
@@ -22,7 +29,7 @@ export const Header = () => {
         <div className="flex gap-4">{displayLinks()}</div>
         <div className="flex gap-4">{displaySocials()}</div>
         <button className="py-2 px-4 border border-white rounded hover:bg-white hover:text-black">
-          Let's Connect
+          Let&apos;s Connect
         </button>
       </div>
     </div>
