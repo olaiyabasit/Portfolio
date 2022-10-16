@@ -10,9 +10,7 @@ export const Hero = () => {
         <div className="w-[90%] mx-auto">
           <Typewriter
             options={{
-              strings: [
-                "Hi,<br/> I'm Olaiya Basit,<br/><span>Web Developer.</span>",
-              ],
+              strings: ["Hi,<br/> I'm Basit,<br/><span>Web Developer.</span>"],
               autoStart: true,
               loop: true,
               wrapperClassName: "Typewriter__wrapper",
@@ -21,7 +19,7 @@ export const Hero = () => {
           <p className="w-[40%] text-white">
             A developer with a passion for building rich interactive web apps
             experienced and passionate about developing scalable web
-            applications across the full stack
+            applications across the full stack.
           </p>
           <p className="flex items-center text-white my-10 text-[18px] gap-5  py-2 px-4 border border-white rounded w-[200px] hover:bg-white hover:text-black">
             Let&apos;s Connect
