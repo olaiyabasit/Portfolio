@@ -13,7 +13,7 @@ export const Header = () => {
   const displaySocials = () =>
     socialIcon.map((social, index) => (
       <div
-        className="h-8 w-8 flex items-center justify-center rounded-full bg-white text-black "
+        className="h-8 w-8 flex items-center justify-center rounded-full bg-white text-black cursor-pointer"
         key={index}
       >
         {social.icon}
