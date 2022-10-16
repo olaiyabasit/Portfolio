@@ -9,11 +9,19 @@ export const Hero = () => {
       <div className="absolute top-[20%] w-full mx-auto">
         <div className="w-[90%] mx-auto">
           <Typewriter
-            options={{
-              strings: ["Hi,<br/> I'm Basit,<br/><span>Web Developer.</span>"],
-              autoStart: true,
-              loop: true,
-              wrapperClassName: "Typewriter__wrapper",
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  "Hi,<br/> I'm Basit,<br/><span>Web Developer.</span>"
+                )
+                .callFunction(() => {
+                  console.log("String typed out!");
+                })
+                .pauseFor(2500)
+                .callFunction(() => {
+                  console.log("All strings were deleted");
+                })
+                .start();
             }}
           />
           <p className="w-[40%] text-white">
