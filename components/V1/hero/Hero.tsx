@@ -5,7 +5,7 @@ import { TbArrowLoopRight2 } from "react-icons/tb";
 export const Hero = () => {
   return (
     <div>
-      <div className="h-screen w-screen relative bg-[#101010] font-monte" />
+      <div className="h-screen w-screen relative bg-[#101010] font-monte"/>
       <div className="absolute top-[20%] w-full mx-auto">
         <div className="w-[90%] mx-auto">
           <Typewriter
