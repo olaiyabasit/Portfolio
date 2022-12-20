@@ -13,7 +13,7 @@ export const Header = () => {
   const displaySocials = () =>
     socialIcon.map((social, index) => (
       <div
-        className="h-4 w-4 flex items-center justify-center border border-inherit p-1 text-white cursor-pointer"
+        className="h-6 w-6 flex items-center justify-center border border-inherit p-1 text-white cursor-pointer"
         key={index}
       >
         {social.icon}
@@ -22,9 +22,9 @@ export const Header = () => {
 
   return (
     <div className="sticky top-0 z-10 bg-[#1E1E1E] font-poppins">
-      <div className="flex justify-between py-[30px] w-[100%] m-auto max-w-[1200px]">
+      <div className="flex justify-between py-[30px] w-[100%] m-auto max-w-[1280px]">
         <div className="flex gap-[8px] items-center">{displaySocials()}</div>
-        <div className="flex justify-end">
+        <div className="ml-[200px]">
           <img src="/images/Basit.svg" />
         </div>
         <div className="flex gap-[16px]">
