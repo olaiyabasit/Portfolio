@@ -13,7 +13,7 @@ export const Footer = () => {
     ));
 
   return (
-    <div className="m-auto max-w-[1280px] px-[64px] py-[24px] mt-[50px] text-[12px]">
+    <div className="m-auto max-w-[1280px] px-[64px] py-[24px] mt-[50px] text-[12px] border-t-2 border-[#1E1E1E]">
       <div className="flex justify-between items-center text-white font-poppins">
         <div className="flex gap-[8px]">
           <p>&#169; Basit 2022.</p>

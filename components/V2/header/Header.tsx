@@ -3,13 +3,6 @@ import React from 'react';
 import { data, socialIcon } from './data';
 
 export const Header = () => {
-  const displayLinks = () =>
-    data.map((link, index) => (
-      <Link href={link.to} key={index}>
-        {link.name}
-      </Link>
-    ));
-
   const displaySocials = () =>
     socialIcon.map((social, index) => (
       <div
@@ -24,7 +17,7 @@ export const Header = () => {
     <div className="sticky top-0 z-10 bg-[#1E1E1E] font-poppins">
       <div className="flex justify-between py-[30px] w-[100%] m-auto max-w-[1280px]">
         <div className="flex gap-[8px] items-center">{displaySocials()}</div>
-        <div className="absolute left-[50%]">
+        <div className="ml-[200px]">
           <img src="/images/Basit.svg" />
         </div>
         <div className="flex gap-[16px]">

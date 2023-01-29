@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { About } from '../components/V1/about/About';
 import { Contact } from '../components/V2/contact/Contact';
 import { Footer } from '../components/V2/footer/Footer';
 import { Header } from '../components/V2/header/Header';
@@ -10,7 +9,7 @@ import { Testimonial } from '../components/V2/testimonial/Testimonial';
 
 const Home: NextPage = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="">
       <Head>
         <title>Olaiya Basit</title>
         <meta name="description" content="olaiya basit Portfolio" />
@@ -24,7 +23,6 @@ const Home: NextPage = () => {
         <Contact />
         <Footer />
       </div>
-      {/* <About />  */}
     </div>
   );
 };
