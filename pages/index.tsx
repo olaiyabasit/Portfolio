@@ -8,7 +8,7 @@ import { Testimonial } from '../components/V2/testimonial/Testimonial';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Head>
         <title>Olaiya Basit</title>
         <meta name="description" content="olaiya basit Portfolio" />
