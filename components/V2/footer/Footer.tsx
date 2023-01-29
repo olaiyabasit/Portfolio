@@ -27,7 +27,11 @@ export const Footer = () => {
         <div className="flex gap-[8px] items-center">{displaySocials()}</div>
       </div>
       <div className="mt-[32px] pb-[36px] text-white text-[12px]">
-        <a href="mailto:olaiyabasit@gmail.com?subject = Feedback&body = Message">
+        <a
+          href="https://bit.ly/hamzaabdul   "
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Design by Hamza Abdul
         </a>
       </div>
