@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import React from 'react';
-import { data, socialIcon } from './data';
+import Link from "next/link";
+import React from "react";
+import { data, socialIcon } from "./data";
 
 export const Header = () => {
   const displaySocials = () =>
@@ -9,13 +9,13 @@ export const Header = () => {
         className="h-6 w-6 flex items-center justify-center border border-inherit p-1 text-white cursor-pointer"
         key={index}
       >
-        {social.icon}
+        <Link href={social.to}>{social.icon}</Link>
       </div>
     ));
 
   return (
     <div className="sticky top-0 z-10 bg-[#1E1E1E] font-poppins">
-      <div className="flex justify-between py-[30px] w-[100%] m-auto max-w-[1280px]">
+      <div className="flex justify-between py-[30px] px-[16px] w-[100%] m-auto max-w-[1280px]">
         <div className="flex gap-[8px] items-center">{displaySocials()}</div>
         <div className="ml-[200px]">
           <img src="/images/Basit.svg" />

@@ -10,5 +10,5 @@ export const socialIcon = [
   { icon: <FiFacebook className="" />, to: "/" },
   { icon: <FiLinkedin />, to: "/" },
   { icon: <FiInstagram />, to: "/" },
-  { icon: <FiGithub />, to: "/" }
+  { icon: <FiGithub />, to: "https://github.com/olaiyabasit" },
 ];
